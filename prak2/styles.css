@@ -1,0 +1,68 @@
+#mainWallpaper {
+    width: 25%;
+    height: 25%;
+    border-radius: 5%;
+}
+
+.head {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_part {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.mid_part {
+    background-color: bisque;
+}
+
+.form_part {
+    background-color: goldenrod;
+}
+
+.head {
+    display: flex;
+}
+
+.side_desc {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar {
+    background-color: aquamarine;
+}
+
+.menu {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.section h1 {
+    color: red;
+}
+
+.section iframe {
+    width: 200px auto;
+    margin: auto auto;
+}
+
+.section div {
+    display: flex;
+    align-items: center;
+}
+
+* {
+    border: 1px solid black;
+}

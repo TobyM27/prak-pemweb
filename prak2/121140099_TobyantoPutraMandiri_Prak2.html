@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title> Saya Nakama </title>
-        <img src="https://dorangadget.com/wp-content/uploads/2023/05/Karakter-One-Piece-63.jpg" alt="Crew Hat Members">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div> 
-            <h1> Ore wa Toby dari informatics crew of '21 </h1>
+        <div class="top_part"> 
+            <header class="head"> 
+                <img id="mainWallpaper" src="https://dorangadget.com/wp-content/uploads/2023/05/Karakter-One-Piece-63.jpg" alt="Crew Hat Members">
+                <div class="side_desc">
+                    <h1> Ore wa Toby dari informatics crew of '21 </h1>
+                    <h1> Ganbatte </h1>
+                </div>
+                
+            </header>
+
+            <nav class="navbar">
+                <li class="menu"> anime favorit saya </li>
+                <li class="menu"> linkedin saya </li>
+                <li class="menu"> github saya </li>
+            </nav>
+
+            <section class="section">
+                <div> 
+                    <h1> Tentang One Piece </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi commodi a dolorum quidem hic esse asperiores libero ipsum nemo vitae recusandae placeat repellendus ut itaque necessitatibus, vel sapiente explicabo.</p>
+                </div>
+                
+
+                <div class="section_video"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mQdMSp4xoiI?si=nYQlJK5ShAAl3fr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+
+
+            </section>
+
             <h1> Berikut merupakan <i>devil fruit</i> terkuat di dunia per-nakaman. Klik untuk mencari lebih tahu! </h1>
             <ul>
                 <li><a href="https://onepiece.fandom.com/id/wiki/Gomu_Gomu_no_Mi"> Gomu Gomu no Mi </a></li>
@@ -20,7 +50,6 @@
 
             <h2> Emang bouleh se-nakama itu, toby? </h2>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mQdMSp4xoiI?si=nYQlJK5ShAAl3fr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <br> 
             <p> video dibawah ini digunakan apabila link embed youtube tidak bisa digunakan</p>
             <video src="video_asset_1.mp4" width="300" controls ></video> <br>
@@ -30,7 +59,7 @@
             <h1> berikut merupakan list kapten-kapten terkuat di dunia one piece! </h1>
         </div>
         
-        <div>
+        <div class="mid_part">
             <table border="1" style="width: 50%; border: 1px solid black;">
                 <tr>
                     <th>no</th>
@@ -59,7 +88,7 @@
             </table>
         </div>
         
-        <div>
+        <div class="form_part">
             <form action="testing.php" method="post">
             <div>
                 <h2>Hubungi saya melalui discord </h2>
@@ -78,6 +107,8 @@
                 <input type="checkbox" id="crew_rec" name="crew_rec" value="Bepo"> Bepo <br>
                 <input type="checkbox" name="crew_rec" id="crew_rec" value="Katakuri"> Katakuri <br>
                 <input type="checkbox" name="crew_rec" id="crew_rec" value="Chopper"> Chopper <br>
+
+                
             </div>
             </form>
         </div>
