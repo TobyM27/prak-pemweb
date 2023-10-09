@@ -1,21 +1,35 @@
-#mainWallpaper {
-    width: 25%;
-    height: 25%;
-    border-radius: 5%;
+.mainWallpaper {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-body{
-    margin: 0 2rem 0 2rem;
-}
 .head {
     display: flex;
     background-color: gray;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
-.top_part {
-    
+.top_part p, h1, h2, audio, video{
+    padding: 10px;
+}
+
+.side_desc {
+    width: 300px;
+    margin-left: 20x;
+}
+
+.nama{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.status {
+    color: rgb(150, 150, 150);
+    margin-bottom: 5px;
 }
 
 .mid_part {
@@ -24,10 +38,6 @@ body{
 
 .form_part {
     background-color: goldenrod;
-}
-
-.side_desc {
-    margin-left: 20px;
 }
 
 nav {
@@ -52,13 +62,16 @@ nav {
 }
 
 .section iframe {
+    display: flexbox;
+    align-items: center;
     width: 200px auto;
     margin: auto auto;
 }
 
-.section div {
+.section p {
     display: flex;
     align-items: center;
+    padding: 2px 5px 2px 5px;
 }
 
 * {
