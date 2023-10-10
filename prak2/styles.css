@@ -1,3 +1,4 @@
+/*
 .mainWallpaper {
     height: 100px;
     width: 100px;
@@ -77,3 +78,117 @@ nav {
 * {
     border: 1px solid black;
 }
+
+*/
+.mainWallpaper {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+body {
+    background-color: #dfd500;
+}
+
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #FFFFFF;
+}
+
+.head {
+    padding: 20px;
+    display: flex;
+    background-color: #E70013;
+    justify-content: start;
+    align-items: center;
+}
+
+.gambar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.side {
+    margin-left: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    background-color: #E6E8E6;
+
+}
+
+.menu {
+    list-style: none;
+    padding: 20px;
+}
+
+.tentang {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tentang h2 {
+    color: red;
+}
+
+.tentang div {
+    display: flex;
+    justify-content: center;
+}
+
+.tentang video {
+    width: 300px;
+
+}
+
+.pengalaman, .tambahan {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tambahan_video_audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pengalaman table {
+    width: 100%;
+}
+
+.form {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+
+#video_asset_1 {
+    align-items: center;
+}
+
+#audio_asset_1 {
+    align-items: center;
+}
+
+/* * {
+    border: 1px solid black;
+} */

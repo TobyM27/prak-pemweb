@@ -1,113 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title> Saya Nakama </title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Saya Nakama</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <body>
-        <div class="top_part"> 
-            <header class="head"> 
-                <img class="mainWallpaper" src="https://dorangadget.com/wp-content/uploads/2023/05/Karakter-One-Piece-63.jpg" alt="Crew Hat Members">
-                <div class="side_desc"> <!-- info div-->
-                    <p class="nama"> Ore wa Toby dari informatics crew of '21 </p>
-                    <p class="status"> Ganbatte </p>
-                </div>
-                
-            </header>
-
-            <nav class="navbar">
-                <li class="menu"> anime favorit saya </li>
-                <li class="menu"> linkedin saya </li>
-                <li class="menu"> github saya </li>
-            </nav>
-
-            <section class="section">
-                <div> 
-                    <h1> Tentang One Piece </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi commodi a dolorum quidem hic esse asperiores libero ipsum nemo vitae recusandae placeat repellendus ut itaque necessitatibus, vel sapiente explicabo.</p>
-                </div>
-                
-
-                <div class="section_video"> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mQdMSp4xoiI?si=nYQlJK5ShAAl3fr6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <h1> Berikut merupakan <i>devil fruit</i> terkuat di dunia per-nakaman. Klik untuk mencari lebih tahu! </h1>
-            <ul>
-                <li><a href="https://onepiece.fandom.com/id/wiki/Gomu_Gomu_no_Mi"> Gomu Gomu no Mi </a></li>
-                <li><a href="https://onepiece.fandom.com/wiki/Hito_Hito_no_Mi"> Hito Hito no Mi </a></li>
-                <li><a href="https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"> Gura Gura no Mi </a></li>
-            </ul>
-
-            <h1> Tentang saya </h1>
-            <p> Saya adalah salah satu anggota dalam <i>crew</i> binary 21. <b>Selama</b>  liburan semester genap kemaren, saya menghabiskan sekitar 30% waktu saya menonton tv serial "One Piece". Oleh karena itu, saya memilih tema "One Piece" untuk tugas praktikum pemweb pertama saya</p>
-
-            <h2> Emang bouleh se-nakama itu, toby? </h2>
-
-            <br> 
-            <p> video dibawah ini digunakan apabila link embed youtube tidak bisa digunakan</p>
-            <video src="video_asset_1.mp4" width="300" controls ></video> <br>
-            <p> Musik hindia biar chill dulu, baru jadi nakama lagi!</p>
-            <audio src="audio_asset_1.mp3" controls></audio>
-
-            <h1> berikut merupakan list kapten-kapten terkuat di dunia one piece! </h1>
+  <body>
+    <div class="container">
+      <!--top-part-->
+      <header class="head">
+        <img
+          class="mainWallpaper"
+          src="https://dorangadget.com/wp-content/uploads/2023/05/Karakter-One-Piece-63.jpg"
+          alt="Crew Hat Members"
+        />
+        <!--class="mainWallpaper"-->
+        <div class="side">
+          <!-- side_desc atau info div-->
+          <p class="nama">Ore wa Toby dari informatics crew of '21</p>
+          <p class="status">Ganbatte</p>
         </div>
-        
-        <div class="mid_part">
-            <table border="1" style="width: 50%; border: 1px solid black;">
-                <tr>
-                    <th>no</th>
-                    <th>nama</th>
-                    <th>nama <i>crew</i></th>
-                    <th>nama <i>devil fruit</i></th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <th>Luffy</th>
-                    <th><i>Crew Hat Pirates</i></th>
-                    <th>Gomu Gomu no Mi</th>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <th>Shanks</th>
-                    <th><i>Red Hat Pirates</i></th>
-                    <th>-</th>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <th>Whitebeard</th>
-                    <th><i>Whitebeard Pirates</i></th>
-                    <th>Gura Gura no Mi</th>
-                </tr>
-            </table>
-        </div>
-        
-        <div class="form_part">
-            <form action="testing.php" method="post">
-            <div>
-                <h2>Hubungi saya melalui discord </h2>
-                <label for="discord">discord id:</label>
-                <input type="text" placeholder="Masukkan id discord anda..." id="discord" size="50" required> 
-            </div>
-            <div>
-                <h2>Menurut anda, yang lebih kuat siapa? </h2>
-                <input type="radio" name="Luffy_vs_Roger" id="" value="Luffy"> Luffy D. Monkey <br>
-                <input type="radio" name="Luffy_vs_Roger" value="Roger">  Gol D. Roger <br>
-            </div>
-            <div>
-                <h2>Crew mana yang anda akan pilih untuk menjadi tim bajak laut yang terhebat?</h2>
-                <input type="checkbox" name="crew_rec" id="crew_rec" value="Zoro"> Zoro <br>
-                <input type="checkbox" name="crew_rec" id="crew_rec" value="Jimbei"> Jimbei <br>
-                <input type="checkbox" id="crew_rec" name="crew_rec" value="Bepo"> Bepo <br>
-                <input type="checkbox" name="crew_rec" id="crew_rec" value="Katakuri"> Katakuri <br>
-                <input type="checkbox" name="crew_rec" id="crew_rec" value="Chopper"> Chopper <br>
+      </header>
 
-                
-            </div>
-            </form>
+      <nav class="navbar">
+        <!-- Done -->
+        <li class="menu">anime favorit saya</li>
+        <li class="menu">linkedin saya</li>
+        <li class="menu">github saya</li>
+      </nav>
+
+      <section class="tentang">
+        <!--Done-->
+        <!--section-->
+        <h2>Tentang One Piece</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          reiciendis aperiam amet vero facere pariatur fugiat ullam dolorem quos
+          quam saepe neque tenetur odio optio error, corrupti quia incidunt
+          fugit.
+        </p>
+        <!-- <div> 
+                      <h1> Tentang One Piece </h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi commodi a dolorum quidem hic esse asperiores libero ipsum nemo vitae recusandae placeat repellendus ut itaque necessitatibus, vel sapiente explicabo.</p>
+                  </div> -->
+
+        <div class="section_video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mQdMSp4xoiI?si=nYQlJK5ShAAl3fr6"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullen
+          ></iframe>
         </div>
-    </body>
+      </section>
+
+      <section class="tambahan">
+        <div class="tambahan_teks">
+          <h1>
+            Berikut merupakan <i>devil fruit</i> terkuat di dunia per-nakaman.
+            Klik untuk mencari lebih tahu!
+          </h1>
+          <ul>
+            <li>
+              <a href="https://onepiece.fandom.com/id/wiki/Gomu_Gomu_no_Mi">
+                Gomu Gomu no Mi
+              </a>
+            </li>
+            <li>
+              <a href="https://onepiece.fandom.com/wiki/Hito_Hito_no_Mi">
+                Hito Hito no Mi
+              </a>
+            </li>
+            <li>
+              <a href="https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi">
+                Gura Gura no Mi
+              </a>
+            </li>
+          </ul>
+
+          <h1>Tentang saya</h1>
+          <p>
+            Saya adalah salah satu anggota dalam <i>crew</i> binary 21.
+            <b>Selama</b> liburan semester genap kemaren, saya menghabiskan
+            sekitar 30% waktu saya menonton tv serial "One Piece". Oleh karena
+            itu, saya memilih tema "One Piece" untuk tugas praktikum pemweb
+            pertama saya
+          </p>
+          <h2>Emang bouleh se-nakama itu, toby?</h2>
+        </div>
+
+        <div class="tambahan_video_audio">
+          <p>
+            video dibawah ini digunakan apabila link embed youtube tidak bisa
+            digunakan
+          </p>
+          <video
+            id="video_asset_1"
+            src="/prak1/video_asset_1.mp4"
+            width="300"
+            controls
+          ></video>
+          <br />
+          <p>Musik hindia biar chill dulu, baru jadi nakama lagi!</p>
+          <audio
+            id="audio_asset_1"
+            src="/prak1/audio_asset_1.mp3"
+            controls
+          ></audio>
+        </div>
+      </section>
+
+      <section class="pengalaman">
+        <!--Mid_Part-->
+        <h1>
+          Berikut merupakan list kapten-kapten terkuat di dunia one piece!
+        </h1>
+        <h2 id="tabel_nakama">Tabel Per-Nakam-An</h2>
+        <table border="1" style="width: 50%; border: 1px solid black">
+          <tr>
+            <th>no</th>
+            <th>nama</th>
+            <th>nama <i>crew</i></th>
+            <th>nama <i>devil fruit</i></th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>Luffy</th>
+            <th><i>Crew Hat Pirates</i></th>
+            <th>Gomu Gomu no Mi</th>
+          </tr>
+          <tr>
+            <th>2</th>
+            <th>Shanks</th>
+            <th><i>Red Hat Pirates</i></th>
+            <th>-</th>
+          </tr>
+          <tr>
+            <th>3</th>
+            <th>Whitebeard</th>
+            <th><i>Whitebeard Pirates</i></th>
+            <th>Gura Gura no Mi</th>
+          </tr>
+        </table>
+      </section>
+
+      <section class="form">
+        <form action="testing.php" method="post">
+          <div>
+            <h2>Hubungi saya melalui discord</h2>
+            <label for="discord">discord id:</label>
+            <input
+              type="text"
+              placeholder="Masukkan id discord anda..."
+              id="discord"
+              size="50"
+              required
+            />
+          </div>
+          <div>
+            <h2>Menurut anda, yang lebih kuat siapa?</h2>
+            <input type="radio" name="Luffy_vs_Roger" id="" value="Luffy" />
+            Luffy D. Monkey <br />
+            <input type="radio" name="Luffy_vs_Roger" value="Roger" /> Gol D.
+            Roger <br />
+          </div>
+          <div>
+            <h2>
+              Crew mana yang anda akan pilih untuk menjadi tim bajak laut yang
+              terhebat?
+            </h2>
+            <input type="checkbox" name="crew_rec" id="crew_rec" value="Zoro" />
+            Zoro <br />
+            <input
+              type="checkbox"
+              name="crew_rec"
+              id="crew_rec"
+              value="Jimbei"
+            />
+            Jimbei <br />
+            <input type="checkbox" id="crew_rec" name="crew_rec" value="Bepo" />
+            Bepo <br />
+            <input
+              type="checkbox"
+              name="crew_rec"
+              id="crew_rec"
+              value="Katakuri"
+            />
+            Katakuri <br />
+            <input
+              type="checkbox"
+              name="crew_rec"
+              id="crew_rec"
+              value="Chopper"
+            />
+            Chopper <br />
+          </div>
+          <input type="submit" />
+        </form>
+      </section>
+
+      <footer>Footer</footer>
+    </div>
+  </body>
 </html>
