@@ -95,7 +95,7 @@ body {
       rgba(58, 58, 158, 0.8),
       rgba(136, 136, 206, 0.7)
     ),
-    url(prak2/background_image.jpeg);
+    url(/prak2/background_image.jpeg);
 }
 
 .container {
