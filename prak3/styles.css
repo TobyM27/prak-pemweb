@@ -1,0 +1,86 @@
+body {
+    background-color: grey;
+    padding: 20px;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    padding: 0px 20px;
+
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+button {
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.about {
+    background-color: white;
+    flex-direction: column-reverse;
+    display: flex;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.data button {
+    background-color: blueviolet;
+}
+
+.pengalaman {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container-box {
+    display: flex;
+
+    background-color: white;
+    display: flex;
+    padding: flex;
+}
+
+box {
+    background-color: rgb(34, 32, 78);
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+}
+
+table {
+    width: 100%;
+}
+
+@media(max-width: 768){
+    .container-box {
+        flex-direction: column;
+    }
+}
