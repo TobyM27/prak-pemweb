@@ -47,6 +47,12 @@ button {
     padding: 20px;
 }
 
+.about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
 .data button {
     background-color: blueviolet;
 }
