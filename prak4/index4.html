@@ -1,0 +1,32 @@
+<!-- Pada praktikum minggu 4, praktikan belajar mengenai javascript dalam pemrograman web -->
+<!-- Tobyanto Putra Mandiri - 121140099 - RB -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Pemweb Minggu 4 </title>
+</head>
+<body>
+    <script>
+        // bagian ini berguna untuk menginisialisasi variabel-variabel yang akan digunakan dalam program js
+        let jumlah_bilangan=0;
+        let ganjil=0;
+        let genap=0;
+
+        // bagian ini berguna untuk meminta input sebanyak jumlah bilangan yang diminta oleh user
+        for(let i=1; i<=bilangan; i++){
+            // percabangan genap, akan menambahkan variabel genap jika bilangan yang dicek merupakan bilangan genap
+            if(i%2 == 0){
+                genap++;
+            // percabangan ganjil, akan menambahkan variabel ganjil jika bilangan yang dicek merupakan bilangan ganjil
+            }else{
+                ganjil++;
+            }
+            console.log(`Bilangan Ganjil: ${ganjil}`);
+            console.log(`Bilangan Genap: ${genap}`);
+            alert(`Bilangan Ganjil: ${ganjil}\nBilangan Genap: ${genap}`);
+        }
+    </script>
+</body>
+</html>
