@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktikum Pemweb Minggu 5</title>
-
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -59,12 +59,12 @@
 
         // fungsi ini berguna untuk menambahkan operator aritmatik (+, -, *, dan /) terhadap kalkulator
         function appendOperator(operator) {
-            document.getElementById('result').value += operator;
+            document.getElementById('hasil').value += operator;
         }
 
         // fungsi ini berguna untuk melakukan clear terhadap kalkulator. Layaknya sewaktu kita menekan tombol C pada kalkulator biasanya. 
         function clearResult(){
-            document.getElementById('result').value = '';
+            document.getElementById('hasil').value = '';
         }
 
         // fungsi ini berguna untuk melakukan evaluasi terhadap komputasi terhadap input yang diberi oleh pengguna. 
