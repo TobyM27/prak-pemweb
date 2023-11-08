@@ -20,51 +20,54 @@
             <input type="text" id="hasil" readonly>
         </div>
 
+        <!-- bagian ini berguna untuk menampilkan tombol-tombol dari semua bagian kalkulator (mulai dari tombol angka 0-9, tombol operator aritmatika, tombol C, tombol =) -->
         <div>
-            <input type="button" value="1" onclick="">
-            <input type="button" value="2" onclick="">
-            <input type="button" value="3" onclick="">
-            <input type="button" value="+" onclick="">
+            <input type="button" value="1" onclick="appendNumber('1')">
+            <input type="button" value="2" onclick="appendNumber('2')">
+            <input type="button" value="3" onclick="appendNumber('3')">
+            <input type="button" value="+" onclick="appendOperator('+')">
         </div>
 
         <div>
-            <input type="button" value="4" onclick="">
-            <input type="button" value="5" onclick="">
-            <input type="button" value="6" onclick="">
-            <input type="button" value="-" onclick="">
+            <input type="button" value="4" onclick="appendNumber('4')">
+            <input type="button" value="5" onclick="appendNumber('5')">
+            <input type="button" value="6" onclick="appendNumber('6')">
+            <input type="button" value="-" onclick="appendOperator('-')">
         </div>
 
         <div>
-            <input type="button" value="7" onclick="">
-            <input type="button" value="8" onclick="">
-            <input type="button" value="9" onclick="">
-            <input type="button" value="*" onclick="">
+            <input type="button" value="7" onclick="appendNumber('7')">
+            <input type="button" value="8" onclick="appendNumber('8')">
+            <input type="button" value="9" onclick="appendNumber('9')">
+            <input type="button" value="*" onclick="appendOperator('*')">
         </div>
 
         <div>
-            <input type="button" value="C" onclick="">
-            <input type="button" value="O" onclick="">
-            <input type="button" value="=" onclick="">
-            <input type="button" value="/" onclick="">
+            <input type="button" value="C" onclick="clearResult()">
+            <input type="button" value="O" onclick="appendNumber('0')">
+            <input type="button" value="=" onclick="calculateResult()">
+            <input type="button" value="/" onclick="appendOperator('/')">
         </div>
     </div>
 
     <!-- Kode Javacript dimasukkan secara internal terhadap index.html karena tidak memerlukan banyak kode javascript untuk menjalankan proses komputasi yang dibutuhkan oleh website kalkulator ini -->
     <script>
-        // fungsi ini berguna untuk operasi penambahan
+        // fungsi ini berguna untuk memeriksa apabila tombol angka dipanggil oleh pengguna (sewaktu ditekan) terhadap kalkulator. Num berguna sebagai argument yang merepresentasikan angka yang ditekan. 
         function appendNumber(num) {
             document.getElementById('hasil').value += num;
         }
 
-        
+        // fungsi ini berguna untuk menambahkan operator aritmatik (+, -, *, dan /) terhadap kalkulator
         function appendOperator(operator) {
             document.getElementById('result').value += operator;
         }
 
+        // fungsi ini berguna untuk melakukan clear terhadap kalkulator. Layaknya sewaktu kita menekan tombol C pada kalkulator biasanya. 
         function clearResult(){
             document.getElementById('result').value = '';
         }
 
+        // fungsi ini berguna untuk melakukan evaluasi terhadap komputasi terhadap input yang diberi oleh pengguna. 
         function calculateResult(){
             let hasil = eval(document.getElementById('hasil').value);
             document.getElementById('hasil').value = hasil;
