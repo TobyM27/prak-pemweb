@@ -48,5 +48,27 @@
             <input type="button" value="/" onclick="">
         </div>
     </div>
+
+    <!-- Kode Javacript dimasukkan secara internal terhadap index.html karena tidak memerlukan banyak kode javascript untuk menjalankan proses komputasi yang dibutuhkan oleh website kalkulator ini -->
+    <script>
+        // fungsi ini berguna untuk operasi penambahan
+        function appendNumber(num) {
+            document.getElementById('hasil').value += num;
+        }
+
+        
+        function appendOperator(operator) {
+            document.getElementById('result').value += operator;
+        }
+
+        function clearResult(){
+            document.getElementById('result').value = '';
+        }
+
+        function calculateResult(){
+            let hasil = eval(document.getElementById('hasil').value);
+            document.getElementById('hasil').value = hasil;
+        }
+    </script>
 </body>
 </html>
