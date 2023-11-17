@@ -1,3 +1,11 @@
+<!-- Praktikum Pemrograman Web Minggu 7 -->
+<!-- saya mencoba praktikum bagian inheritance dengan beberapa modifikasi yaitu menggunakan industri videogame sebagai kasus studi  -->
+<!-- 
+Nama : Toby Manurung 
+NIM : (121140099) 
+Kelas : RB / RB (Siakad/Praktikum)
+-->
+
 <?php
 class videogame {
     public $title;

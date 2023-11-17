@@ -1,4 +1,10 @@
 <!-- Praktikum Pemrograman Web Minggu 7 -->
+<!-- saya mencoba praktikum bagian class dan objek -->
+<!-- 
+Nama : Toby Manurung 
+NIM : (121140099) 
+Kelas : RB / RB (Siakad/Praktikum)
+-->
 <?php
 // mendefinisikan kelas
 class Mobil {
