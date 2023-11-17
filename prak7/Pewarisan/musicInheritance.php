@@ -12,17 +12,15 @@ class Music {
     public $title;
     public $artist;
     public $genre;
-    public $total_stream;
 
-    public function __construct($title, $artist, $genre, $total_stream){
+    public function __construct($title, $artist, $genre){
         $this->title = $title;
         $this->artist = $artist;
         $this->genre = $genre;
-        $this->total_stream = $total_stream;
     }
     
     public function infoMusic() {
-        echo"title : ".$this->title. " artist : ".$this->artist. " genre : ".$this->genre. " total streams : ".$this->total_stream. " .<br>";
+        echo"title : ".$this->title. " artist : ".$this->artist. " genre : ".$this->genre. " .<br>";
     }
 }
 ?>
