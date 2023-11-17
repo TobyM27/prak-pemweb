@@ -1,5 +1,5 @@
 <!-- Praktikum Pemrograman Web Minggu 7 -->
-<!-- saya mencoba praktikum bagian constructor dan desctructor dengan beberapa modifikasi yaitu menggunakan lagu/musik sebagai kasus studi  -->
+<!-- saya mencoba praktikum bagian inheritance dengan beberapa modifikasi yaitu menggunakan lagu/musik sebagai kasus studi  -->
 <!-- 
 Nama : Toby Manurung 
 NIM : (121140099) 
