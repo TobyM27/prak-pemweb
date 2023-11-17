@@ -9,7 +9,7 @@ class MusicPewaris extends Music {
         $this->total_stream = $total_stream;
     }
     public function musicInfo() {
-        echo"title : ".$this->title. " artist : ".$this->artist. " genre : ".$this->genre. " total stream : ".$this->total_stream."";
+        echo " title : ".$this->title. " artist : ".$this->artist. " genre : ".$this->genre. " total stream : ".$this->total_stream."";
     }
 
 }
