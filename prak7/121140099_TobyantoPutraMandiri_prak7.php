@@ -26,13 +26,13 @@ class Mahasiswa{
 
     // bagian ini berguna untuk menampilkan atau mencetak informasi terkait data-data hasil dari kelas mahasiswa
     public function getMahasiswa(){
-        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "Usia : ".$this->usia. "<br> <br>";
+        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "<br> Usia : ".$this->usia. "<br> <br>";
     }
 
     // bagian ini berguna apabila pengguna ingin menghapus seluruh data mahasiswa yang telah tersimpan
-    public function __destruct(){
-        echo "Objek mahasiswa telah dihapus!";
-    }
+    // public function __destruct(){
+    //     echo "Objek mahasiswa telah dihapus! <br>";
+    // }
 }
 
 // pada bagian ini terdapat dua objek baru yang dibuat dengan menggunakan kelas Mahasiswa yaitu : $mhs1 dan $mhs2
@@ -57,7 +57,7 @@ class Valorant extends Mahasiswa{
 
     // bagian ini berguna untuk menampilkan atau mencetak informasi terkait data-data hasil dari kelas Valorant yang menunjukan semua data dari mahasiswa namun dengan tambahan atribut rank dan kd
     public function getMhsVal(){
-        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "Usia : ".$this->usia. "Rank : ".$this->rank. "KD : ".$this->kd ."<br> <br>";
+        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "<br> Usia : ".$this->usia. "<br> Rank : ".$this->rank. "<br> KD : ".$this->kd ."<br> <br>";
     }
 
 }
@@ -98,21 +98,23 @@ try {
     $test->settahunLahir(2000);
     echo $test->getTahunLahir();
 }catch(InvalidArgumentException $e){ // bagian ini (catch) akan menampilkan errro apabila bagian try tidak berhasil.
-    echo "Terdapat error pada penginputan nama dan tahun lahir. Berikut merupakan laporan error : ". $e->getMessage(). "<br>";
+    echo "Terdapat error pada penginputan nama dan tahun lahir. Berikut merupakan laporan error : ". $e->getMessage(). "<br> <br>";
 }
 
 //berikut merupakan regex yang diambil dari file index.php dari folder regularexpression
 // Teks html 
-$htmlText = '<p> Hello there, what is your favorite music genre out of these 3? <br/> <span style="text-decoration: underline;;"> Hip Hop </span> atau <span style="text-decoration: underline;"> Pop </span> ... </p>';
+$htmlText = '<p> Hello there, what is your favorite music genre out of these 3? <br> <span style="text-decoration: underline;"> Hip Hop </span> atau <span style="text-decoration: underline;"> Pop </span> </p>';
 
-
+echo "kalimat HTML sebelum diberi regular expression : ";
+echo $htmlText;
 $regex = '/<span style="text-decoration:\s*([^"]+)">/'; // regex ini berguna untuk mencocokkan tag <span> dengan properti warna
 
 $newTxtDec = 'overline'; // nilai text-decoration yang baru atau yang diinginkan
 
-$newHTMLText = preg_replace($regex, 'span style="text-decoration : '. $newTxtDec . ';">', $htmlText); // bagian ini berguna untuk mengganti text-decoration dalam tag <span> dengan text-decoration baru
+$newHTMLText = preg_replace($regex, '<span style="text-decoration : '. $newTxtDec . ';">', $htmlText); // bagian ini berguna untuk mengganti text-decoration dalam tag <span> dengan text-decoration baru yang disimpan dalam variabel nexTxtDec yaitu overline
 
 // berguna untuk menampilkan hasil
+echo "kalimat HTML setelah diberi regular expression : ";
 echo $newHTMLText;
 
 ?>
