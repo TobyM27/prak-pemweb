@@ -26,7 +26,7 @@ class Mahasiswa{
 
     // bagian ini berguna untuk menampilkan atau mencetak informasi terkait data-data hasil dari kelas mahasiswa
     public function getMahasiswa(){
-        echo "NIM : ".$this->nim. "\n Nama : ".$this->nama. "\n Prodi : ".$this->prodi. "Usia : ".$this->usia. "\n \n";
+        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "Usia : ".$this->usia. "<br> <br>";
     }
 
     // bagian ini berguna apabila pengguna ingin menghapus seluruh data mahasiswa yang telah tersimpan
@@ -57,7 +57,7 @@ class Valorant extends Mahasiswa{
 
     // bagian ini berguna untuk menampilkan atau mencetak informasi terkait data-data hasil dari kelas Valorant yang menunjukan semua data dari mahasiswa namun dengan tambahan atribut rank dan kd
     public function getMhsVal(){
-        echo "NIM : ".$this->nim. "\n Nama : ".$this->nama. "\n Prodi : ".$this->prodi. "Usia : ".$this->usia. "Rank : ".$this->rank. "KD : ".$this->kd ."\n \n";
+        echo "NIM : ".$this->nim. "<br> Nama : ".$this->nama. "<br> Prodi : ".$this->prodi. "Usia : ".$this->usia. "Rank : ".$this->rank. "KD : ".$this->kd ."<br> <br>";
     }
 
 }
@@ -88,7 +88,7 @@ class dataPrivat{
 
     // fungsi ini berguna untuk mengembalikan nilai/value dari nama dan tahunlahir yang telah diinisialiasi dengan fungsi __construct 
     public function getTahunLahir(){
-        return "Nama : ".$this->Nama. "\nTahun Lahir : ".$this->tahunLahir. "\n";
+        return "Nama : ".$this->Nama. "\nTahun Lahir : ".$this->tahunLahir. "<br>";
     }
 }
 
@@ -98,7 +98,7 @@ try {
     $test->settahunLahir(2000);
     echo $test->getTahunLahir();
 }catch(InvalidArgumentException $e){ // bagian ini (catch) akan menampilkan errro apabila bagian try tidak berhasil.
-    echo "Terdapat error pada penginputan nama dan tahun lahir. Berikut merupakan laporan error : ". $e->getMessage(). "\n";
+    echo "Terdapat error pada penginputan nama dan tahun lahir. Berikut merupakan laporan error : ". $e->getMessage(). "<br>";
 }
 
 //berikut merupakan regex yang diambil dari file index.php dari folder regularexpression
