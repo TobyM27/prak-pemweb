@@ -2,7 +2,7 @@
 <!-- File ini merupakan file tugas praktikum minggu 7 untuk  -->
 
 <!-- 
-Nama : Toby Manurung 
+Nama : Tobyanto Putra Mandiri
 NIM : (121140099) 
 Kelas : RB / RB (Siakad/Praktikum)
 -->
