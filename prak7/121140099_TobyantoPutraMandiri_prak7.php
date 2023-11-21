@@ -79,9 +79,40 @@ class dataPrivat{
     }
 
     public function settahunLahir($tahunLahir){
-        if(is_string($tahunLahir) && strlen($tahunLahir) > 0){
-            
+        if(is_string($tahunLahir) && strlen($tahunLahir) > 0){ // value tahunLahir akan terinisialiasi apabila data yang diinput berupa string dan panjang
+            $this->tahunLahir = $tahunLahir;
+        } else { // invalidArgumentExeception akan terpanggil apabila tahunLahir tidak ada atau invalid.
+            throw new InvalidArgumentException("Anda harus mengisi tahun lahir");
         }
     }
+
+    // fungsi ini berguna untuk mengembalikan nilai/value dari nama dan tahunlahir yang telah diinisialiasi dengan fungsi __construct 
+    public function getTahunLahir(){
+        return "Nama : ".$this->Nama. "\nTahun Lahir : ".$this->tahunLahir. "\n";
+    }
 }
+
+// bagian ini berguna untuk melakukan percobaan terhadap fungsi settahunLahir 
+try {
+    $test = new dataPrivat("Yeshua", 1999);
+    $test->settahunLahir(2000);
+    echo $test->getTahunLahir();
+}catch(InvalidArgumentException $e){ // bagian ini (catch) akan menampilkan errro apabila bagian try tidak berhasil.
+    echo "Terdapat error pada penginputan nama dan tahun lahir. Berikut merupakan laporan error : ". $e->getMessage(). "\n";
+}
+
+//berikut merupakan regex yang diambil dari file index.php dari folder regularexpression
+// Teks html 
+$htmlText = '<p> Hello there, what is your favorite music genre out of these 3? <br/> <span style="text-decoration: underline;;"> Hip Hop </span> atau <span style="text-decoration: underline;"> Pop </span> ... </p>';
+
+
+$regex = '/<span style="text-decoration:\s*([^"]+)">/'; // regex ini berguna untuk mencocokkan tag <span> dengan properti warna
+
+$newTxtDec = 'overline'; // nilai text-decoration yang baru atau yang diinginkan
+
+$newHTMLText = preg_replace($regex, 'span style="text-decoration : '. $newTxtDec . ';">', $htmlText); // bagian ini berguna untuk mengganti text-decoration dalam tag <span> dengan text-decoration baru
+
+// berguna untuk menampilkan hasil
+echo $newHTMLText;
+
 ?>
