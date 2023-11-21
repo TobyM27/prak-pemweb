@@ -65,7 +65,23 @@ class Valorant extends Mahasiswa{
 // jika pengguna ingin memanggil atau mencetak objek yang baru saja dibuat, maka objek pemainMhs1 dapat dibuat dengan kelas Valorant. 
 $pemainMhs1 = new Valorant(12113067,"Jack Red","Teknik Sipil",20, "Radiant", 1.21);
 
+// bagian ini berguna untuk memanggil fungsi getMhsVal untuk mencetak objek pemainMhs1
+$pemainMhs1 -> getMhsVal();
 
+// bagian ini untuk membuat class baru dengan atribut yang privat dimana atribut tersebut tidak dapat dengan sembarangan diakses secara publik.
+class dataPrivat{
+    public $Nama;
+    private $tahunLahir; //atribut baru ini bersifat privat yang berarti tidak dapat diakses oleh kelas lain tanpa metode enkapsulasi
 
+    public function __construct($Nama, $tahunLahir){
+        $this->settahunLahir($tahunLahir); // berguna untuk mengambil dari fungsi settahunLahir
+        $this->Nama = $Nama;
+    }
 
+    public function settahunLahir($tahunLahir){
+        if(is_string($tahunLahir) && strlen($tahunLahir) > 0){
+            
+        }
+    }
+}
 ?>
